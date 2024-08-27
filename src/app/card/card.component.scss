@@ -12,6 +12,16 @@
   padding: 40px;
   font-family: $font;
 
+  @include respond-to(tablet) {
+    width: 456px;
+  }
+
+  @include respond-to(phone) {
+    width: 327px;
+    height: 579px;
+    padding: 24px;
+  }
+
   header {
     display: flex;
     flex-direction: column;
@@ -72,6 +82,14 @@
         font-size: 0.875em;
         font-weight: 700;
         transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+        @include respond-to(tablet) {
+          width: 376px;
+        }
+        
+        @include respond-to(phone) {
+          width: 279px;
+        }
 
         &:hover {
           background-color: #bada55;
